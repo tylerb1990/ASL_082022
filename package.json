@@ -1,0 +1,31 @@
+{
+  "name": "asl_project",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "(cd ractapp && npm run start) & nodemon -e js,twig --watch src index.js"
+  },
+  "keywords": [],
+  "author": "Tyler Bunker",
+  "license": "MIT",
+  "dependencies": {
+    "axios": "^0.27.2",
+    "body-parser": "^1.20.0",
+    "cors": "^2.8.5",
+    "express": "^4.18.1",
+    "express-session": "^1.17.3",
+    "mysql2": "^2.3.3",
+    "querystring": "^0.2.1",
+    "react-router-dom": "^6.3.0",
+    "request": "^2.88.2",
+    "save": "^2.5.0",
+    "sequelize": "^6.21.3",
+    "twig": "^1.15.4"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.19",
+    "sequelize-cli": "^6.4.1"
+  }
+}

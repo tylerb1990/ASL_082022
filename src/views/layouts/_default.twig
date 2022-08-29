@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Hello!</title>
+<style>
+    * {
+        font-family: "system-ui"
+    }
+    .main {
+        background-color: lightgray;
+        margin: 4rem auto;
+        padding: 2rem;
+        width: 33%;
+        border-radius: 1rem;
+        
+    }
+</style>
+</head>
+<body>
+    {% include 'partials/header.twig' %}
+
+    <div class="main">
+        {% block main_content %}
+        {% endblock %}
+    </div>
+
+    {# {% include 'partials/footer.twig' %} #}
+</body>
+</html>

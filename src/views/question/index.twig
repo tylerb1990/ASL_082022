@@ -1,0 +1,20 @@
+{% extends 'layouts/_default.twig' %}
+
+{% block main_content %}
+    <h2 style="margin:0">Questions:</h2>
+    <ul>
+        {% for question in questions %}
+            <li>
+                {{ question.question }} - 
+                <a href="/questions/{{ question.id }}">View</a>
+                 |
+                <a href="/questions/{{ question.id }}/edit">Edit</a>
+                 |
+                <a href="/questions/{{ question.id }}/delete">Delete</a>
+            </li>
+        {% endfor %}
+    </ul>
+    <div>
+        <a href="/questions/new">Create New Question</a>
+    </div>
+{% endblock %}
